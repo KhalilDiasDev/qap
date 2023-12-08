@@ -1,0 +1,769 @@
+{
+  "version": 3,
+  "name": "KrakenD - Pet Story",
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "output_encoding": "no-op",
+  "endpoints": [
+    {
+      "endpoint": "/pet",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet",
+      "method": "PUT",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "PUT",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/findByStatus",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/findByStatus",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/findByTags",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/findByTags",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/{petId}",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/{petId}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/{petId}",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/{petId}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/{petId}",
+      "method": "DELETE",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/{petId}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "DELETE",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/pet/{petId}/uploadImage",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/pet/{petId}/uploadImage",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/store/inventory",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/store/inventory",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/store/order",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/store/order",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/store/order/{orderId}",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/store/order/{orderId}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/store/order/{orderId}",
+      "method": "DELETE",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/store/order/{orderId}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "DELETE",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/createWithArray",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/createWithArray",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/createWithList",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/createWithList",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/login",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/login",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/logout",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/logout",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/{username}",
+      "method": "GET",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/{username}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "GET",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/{username}",
+      "method": "PUT",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/{username}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "PUT",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    },
+    {
+      "endpoint": "/user/{username}",
+      "method": "DELETE",
+      "output_encoding": "no-op",
+      "extra_config": {
+        "security/cors": {
+          "allow_origins": [
+            "*"
+          ],
+          "allow_methods": [
+            "GET",
+            "HEAD",
+            "POST"
+          ],
+          "expose_headers": [
+            "Content-Length",
+            "Content-Type"
+          ],
+          "max_age": "12h",
+          "allow_headers": [
+            "Accept-Language"
+          ],
+          "allow_credentials": false,
+          "debug": false
+        }
+      },
+      "backend": [
+        {
+          "url_pattern": "/undefined/user/{username}",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "DELETE",
+          "extra_config": {},
+          "host": [],
+          "cache_ttl": "300s"
+        }
+      ]
+    }
+  ]
+}

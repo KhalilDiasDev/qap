@@ -1,0 +1,11 @@
+{
+  "workspace": {
+    "name": "Workspace test 01",
+    "description": "Description 1"
+  },
+  "environment": {
+    "repository": "qap.git",
+    "gitUsername": "KhalilDiasDev"
+  },
+  "variables": []
+}
